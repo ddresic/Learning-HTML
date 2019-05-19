@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <title>Tables</title>
+  <style>
+   .border {
+    border: 1px solid red
+   }
+
+   .border_collapsed {
+    border: 1px solid tomato;
+    border-collapse:collapse;
+   }
+  </style>
+ </head>
+ <body style="background-color:PowderBlue; ">
+  <header style="float:top; padding:5px; background-color:mediumaquamarine; ">
+   <h1 style="text-align:center; ">Tables</h1>
+  </header>
+
+  <main>
+   <section style="float:left; width:25%; max-width:175px; min-width:160px; ">
+    <nav  style="float:left; border: 4px solid lightskyblue;
+     padding-right:20px; background-color:PaleTurquoise; ">
+
+     <ul>
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="headings.html">Headings</a></li>
+      <li><a href="Paragraphs.html">Paragraphs</a></li>
+      <li><a href="Styles.html">Style Attribute</a></li>
+      <li><a href="Formatting.html">Formatting</a></li>
+      <li><a href="Quotation.html">Quotation and<br>Citation</a></li>
+      <li><a href="Comments.html">Comments !</a></li>
+      <li><a href="Colors.html">Colors</a></li>
+      <li><a href="Styling%20HTML%20with%20CSS.html">Styling with CSS</a></li>
+      <li><a href="Links.html">Links</a></li>
+      <li><a href="Images.html">Images</a></li>
+      <li><a href="Tables.html">Tables</a></li>
+      <li><a href="Lists.html">Lists</a></li>
+      <li><a href="Block&Inline.html">Block & Inline</a></li>
+      <li><a href="Classes.html">Class Attribute</a></li>
+
+     </ul>
+    </nav>
+   </section>
+
+  <article style="float:left; max-width:70%; padding-left:10px; ">
+
+
+    <p>An HTML table is defined with the &lttable&gt tag. A table header is
+    defined with the &ltth&gt tag. By default, table headings are bold and
+    centered, but you can set a CSS "text-align" property to change that. A
+    table data/cell is defined with the &lttd&gt tag. To add a table caption
+    to a table, use &ltcaption&gt tag.<br/>Table will by defult be displayed
+    without borders,a border is set using CSS "border" property, you need to
+    define borders for both a table and a cells. If you want borders to colapse
+    into one border,add the CSS "border-colapse" property and set value to
+    "colapse",else every cell will display with its own border, you can also
+    specify cpace between the cells borders by seting a CSS "border-spacing"
+    property.<br/>HTML table cells can span more then one row or column, to set
+    this use "colspan" attribute for columns and "rowspan" for rows.</p>
+
+    <p>What "tables" page would this be without any tables,so let`s set few of
+    them.</p>
+
+    <table>
+     <caption><b>Caption for table</b></caption>
+      <tr>
+       <th>table heading 1</th>
+       <th>table heading 2</th>
+       <th>table heading 3</th>
+       <th>table heading 4</th>
+      </tr>
+
+      <tr>
+       <td>table data 1 for table heading 1</td>
+       <td>table data 1 for table heading 2</td>
+       <td>table data 1 for table heading 3</td>
+       <td>table data 1 for table heading 4</td>
+      </tr>
+
+      <tr>
+       <td>table data 2 for table heading 1</td>
+       <td>table data 2 for table heading 2</td>
+       <td>table data 2 for table heading 3</td>
+       <td>table data 2 for table heading 4</td>
+      </tr>
+    </table>
+
+<br/><br/>
+
+    <table class="border">
+     <caption><b>Caption for table with border</b></caption>
+      <tr class="border">
+       <th class="border">table heading 1</th>
+       <th class="border">table heading 2</th>
+       <th class="border">table heading 3</th>
+       <th class="border">table heading 4</th>
+      </tr>
+
+      <tr class="border">
+       <td class="border">table data 1 for table heading 1</td>
+       <td class="border">table data 1 for table heading 2</td>
+       <td class="border">table data 1 for table heading 3</td>
+       <td class="border">table data 1 for table heading 4</td>
+      </tr>
+
+      <tr class="border">
+       <td class="border">table data 2 for table heading 1</td>
+       <td class="border">table data 2 for table heading 2</td>
+       <td class="border">table data 2 for table heading 3</td>
+       <td class="border">table data 2 for table heading 4</td>
+      </tr>
+    </table>
+
+<br/><br/>
+
+    <table class="border_collapsed">
+     <caption><b>Caption for table with collapsed border</b></caption>
+      <tr class="border_collapsed">
+       <th class="border_collapsed">table heading 1</th>
+       <th class="border_collapsed">table heading 2</th>
+       <th class="border_collapsed">table heading 3</th>
+       <th class="border_collapsed">table heading 4</th>
+      </tr>
+
+      <tr class="border_collapsed">
+       <td class="border_collapsed">table data 1 for table heading 1</td>
+       <td class="border_collapsed">table data 1 for table heading 2</td>
+       <td class="border_collapsed">table data 1 for table heading 3</td>
+       <td class="border_collapsed">table data 1 for table heading 4</td>
+      </tr>
+
+      <tr class="border_collapsed">
+       <td class="border_collapsed">table data 2 for table heading 1</td>
+       <td class="border_collapsed">table data 2 for table heading 2</td>
+       <td class="border_collapsed">table data 2 for table heading 3</td>
+       <td class="border_collapsed">table data 2 for table heading 4</td>
+      </tr>
+    </table>
+
+
+
+   </article>
+  </main>
+ 
+ </body>
+</html>

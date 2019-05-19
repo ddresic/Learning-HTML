@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <title>Lists</title>
+  <style>
+.a{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #333333
+}
+
+.b{
+ float: left;
+}
+
+.c{
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 16px;
+ text-decoration: none;
+}
+
+.c:hover{
+ background-color: #111111;
+}
+
+  </style>
+ </head>
+ <body style="background-color:PowderBlue; ">
+  <header style="float:top; padding:5px; background-color:mediumaquamarine; ">
+   <h1 style="text-align:center; ">Lists</h1>
+  </header>
+
+  <main>
+   <section style="float:left; width:25%; max-width:175px; min-width:160px; ">
+    <nav  style="float:left; border: 4px solid lightskyblue;
+     padding-right:20px; background-color:PaleTurquoise; ">
+
+     <ul>
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="headings.html">Headings</a></li>
+      <li><a href="Paragraphs.html">Paragraphs</a></li>
+      <li><a href="Styles.html">Style Attribute</a></li>
+      <li><a href="Formatting.html">Formatting</a></li>
+      <li><a href="Quotation.html">Quotation and<br>Citation</a></li>
+      <li><a href="Comments.html">Comments !</a></li>
+      <li><a href="Colors.html">Colors</a></li>
+      <li><a href="Styling%20HTML%20with%20CSS.html">Styling with CSS</a></li>
+      <li><a href="Links.html">Links</a></li>
+      <li><a href="Images.html">Images</a></li>
+      <li><a href="Tables.html">Tables</a></li>
+      <li><a href="Lists.html">Lists</a></li>
+      <li><a href="Block&Inline.html">Block & Inline</a></li>
+      <li><a href="Classes.html">Class Attribute</a></li>
+
+     </ul>
+    </nav>
+   </section>
+
+  <article style="float:left; max-width:70%; padding-left:10px; ">
+
+   <h2>Unordered list</h2>
+
+   <p>An unordered list starts with the &ltul&gt tag. Each list item starts
+   with the &ltli&gt tag.By default list items will be marked with bullets,
+   (small black circles), but this can be changed using the CSS
+   "list-style-type" property,as shown below.</p>
+
+    <ul style="list-style-type:disc; ">
+    <li>disc/default</li>
+    </ul>
+    <ul style="list-style-type:square; ">
+    <li>square</li>
+    </ul>
+    <ul style="list-style-type:circle; ">
+    <li>circle</li>
+    </ul>
+    <ul style="list-style-type:none; ">
+    <li>none</li>
+    </ul>
+
+   <p>An ordered list starts with the &ltol&gt tag. Each list item starts with
+   the &ltli&gt tag. By default, an ordered lists will start counting from 1,
+   if you want to start counting from specific number, you can use the "start"
+   attribute. The list items will be marked with numbers by default
+   , but this to can be changed using "type" attribute. As shown below</p>
+
+    <ol type="1">
+     <li>type 1/default</li>
+    </ol>
+    <ol type="A">
+     <li>type A/uppercase letters</li>
+    </ol>
+    <ol type="a">
+     <li>type a/lowercase letters</li>
+    </ol>
+    <ol type="I">
+     <li>type I/uppercase roman numbers</li>
+    </ol>
+    <ol type="i">
+     <li>type i/lowercase roman numbers</li>
+    </ol>
+
+   <p>HTML also supports description lists,which is a list of terms, with a
+   description of each term. Description list is defined with the &ltdl&gt
+   tag, term with &ltdt&gt tag and discription with the &ltdd&gt tag.</p>
+
+    <dl>
+     <dt><b>1.</b> &ltdl&gt tag</dt>
+    <dd>- defines description list</dd>
+     <dt><b>2.</b> &ltdt&gt tag</dt>
+    <dd>- defines term to be dscribed</dd>
+     <dt><b>3.</b> &ltdd&gt tag</dt>
+    <dd>- defines description of the term</dd>
+    </dl>
+
+    <p>HTML lists can be styled in many different ways with CSS. One popular
+    way is to style a list horizontally, to create a navigacion menu</p>
+
+     <ul class="a">
+      <li class="b"><a class="c" href="Links.html">Links</a></li>
+      <li class="b"><a class="c" href="Images.html">Images</a></li>
+      <li class="b"><a class="c" href="Tables.html">Tables</a></li>
+      <li class="b"><a class="c" href="Lists.html">Lists</a></li>
+     </ul>
+
+   </article>
+  </main>
+
+ </body>
+</html>

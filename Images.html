@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <title>Images</title>
+ </head>
+ <body style="background-color:PowderBlue; ">
+  <header style="float:top; padding:5px; background-color:mediumaquamarine; ">
+   <h1 style="text-align:center; ">Images</h1>
+  </header>
+
+  <main>
+   <section style="float:left; width:25%; max-width:175px; min-width:160px; ">
+    <nav  style="float:left; border: 4px solid lightskyblue;
+     padding-right:20px; background-color:PaleTurquoise; ">
+
+     <ul>
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="headings.html">Headings</a></li>
+      <li><a href="Paragraphs.html">Paragraphs</a></li>
+      <li><a href="Styles.html">Style Attribute</a></li>
+      <li><a href="Formatting.html">Formatting</a></li>
+      <li><a href="Quotation.html">Quotation and<br>Citation</a></li>
+      <li><a href="Comments.html">Comments !</a></li>
+      <li><a href="Colors.html">Colors</a></li>
+      <li><a href="Styling%20HTML%20with%20CSS.html">Styling with CSS</a></li>
+      <li><a href="Links.html">Links</a></li>
+      <li><a href="Images.html">Images</a></li>
+      <li><a href="Tables.html">Tables</a></li>
+      <li><a href="Lists.html">Lists</a></li>
+      <li><a href="Block&Inline.html">Block & Inline</a></li>
+      <li><a href="Classes.html">Class Attribute</a></li>
+
+     </ul>
+    </nav>
+   </section>
+
+  <article style="float:left; max-width:70%; padding-left:10px; ">
+
+
+    <p>In HTML, images are defined with the &ltimg&gt tag. The &ltimg&gt tag
+    is rmpty tag, it contains only attributes, and does not require a closing
+    tag.<br/>The "alt" attribute provides an alternative text for an image, if
+    for some reason user is unable to view an image,browser will display the
+    value of an "alt" attribute. Style attribute is used to specify an height
+    and width of an image<br/>Alternativly, you can use the "width" and
+    "height" attributes. However, it is sughested to use style attribute,
+    because it prevents style sheets from changing the size of images.
+    <br/>Images can also be used as links, if contained within &lta&gt tag.</p>
+
+    <img src="images/download%20(1).jpg" alt="image" style="width: 100px;
+     margin: 0px 0px 0px 0px; ">
+    <img src="images/download%20(1).png" alt="image" style="width: 100px;
+     margin: 0px 0px 0px 0px;">
+    <img src="images/download.jpg" alt="image" style="width: 100px;
+     margin: 0px 0px 0px 0px;">
+    <img src="images/download.png" alt="image" style="width: 100px;
+    margin: 0px 0px 0px px;  ">
+<br/><br/><br/>
+    <img src="images/html.png" alt="image" style="width: 120px;
+     margin: -185px 0px -10px 0px; ">
+    <img src="images/images.jpg" alt="image" style="width: 150px;
+     margin: -105px -30px 0px 0px; ">
+    <img src="images/HTML-writing.jpg" alt="image" style="width: 120px;
+     margin: -175px 0px 0px 0px; ">
+
+    <p style="font-size: 30px; text-align: center; color: red; ">
+    Just some images floating around</p>
+
+    <p>The &ltmap&gt tag defines an image-map,which is an image with clickable
+    areas.<br/>E.G. clicking on a "C" in a image below will transfer you to a
+    "Styling with CSS" page.</p>
+
+    <img src="images/CSS.png" alt="CSS" usemap="#C">
+     <map name="C">
+      <area shape="rect" coords="80,70,115,120" alt="CSS"
+      href="Styling%20HTML%20with%20CSS.html">
+     </map>
+
+    <p>Images can also be used for an background. To add a background image
+    on an HTML element, use the CSS property "background-image"</p>
+
+    <p>HTML5 introduced the &ltpicture&gt element to add more flexibility when
+    specifying images resources.<br/>The &ltpicture&gt element contains a number
+    of &ltsource&gt elements,each rederring to different image source. This way
+    the browser can choose the image that best fits the current view and/or
+    device. Each &ltsource&gt element have attributes describing when their
+    image is the most suitable. The browser will use the first &ltsource&gt
+    element with matching attribute values, and ignore any following &ltsorce&gt
+    elements.</p>
+
+   </article>
+  </main>
+ 
+ </body>
+</html>
